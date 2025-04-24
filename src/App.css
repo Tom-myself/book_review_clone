@@ -1,0 +1,165 @@
+ul {
+  list-style: none;
+}
+/* button {
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.45);
+  transition: all 0.3s;
+  background-color: aliceblue;
+} */
+/* button:hover {
+  box-shadow: none;
+  background-color: rgb(222, 232, 239);
+} */
+input {
+  font-size: 1.1em;
+}
+
+
+/* header css */
+.header-bg {
+  background-color: aquamarine;
+}
+.header-container {
+  margin: auto;
+  padding: 20px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-list {
+  display: flex;
+  gap: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Books css */
+.card {
+  display: flex;
+  margin: auto;
+  justify-content: space-evenly;
+  flex-wrap: wrap; /* これを追加して、折り返しを許可 */
+}
+
+.card-content {
+  background-color: antiquewhite;
+  padding: 20px;
+  border-radius: 20px;
+  width: 25%; /* 1行に3枚並べるために、幅を33.33%に設定 */
+  height: 100%;
+  margin: 10px auto;
+}
+
+.card-text {
+  margin: 15px auto;
+  display: -webkit-box; /* 必須: Flexboxライクなボックス生成 */
+  -webkit-box-orient: vertical; /* 垂直方向に配置 */
+  overflow: hidden; /* はみ出しを隠す */
+  -webkit-line-clamp: 3; /* 表示する行数を制限 */
+  line-height: 1.5; /* 行間を設定 */
+  max-height: calc(1.5em * 3); /* 3行分の高さを設定 */
+}
+
+
+/* Form css */
+.form-container {
+  background-color: rgb(145, 255, 226);
+  margin: 20px auto auto;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 20px;
+}
+.form-content {
+  text-align: left;
+  margin: 30px auto;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.form-content input {
+  padding: 20px;
+  margin-top: 7px;
+}
+.form-content select {
+  padding: 5px;
+  margin-top: 7px;
+}
+.form-content textarea {
+  padding: 10px;
+  height: 5vh
+}
+.form-button {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+  background-color: rgb(176, 255, 202);
+}
+.form-container h2 {
+  text-align: center;
+}
+/* Book css */
+.delete-button {
+  margin-top: 20px;
+  background-color: rgb(252, 167, 152)
+}
+/* review css */
+.review-content {
+  max-width: 800px;
+  margin: 20px auto;
+}
+.review-card {
+  border: 2px solid rgba(162, 162, 162, 0.547);
+  border-radius: 10px;
+  padding: 30px;
+  margin-top: 20px;
+}
+.review-write {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.review-write button {
+  padding: 15px;
+}
+/* post css */
+.post-container {
+  max-width: 800px;
+  margin: 30px auto auto;
+  background-color: rgb(167, 253, 253);
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+.post-container div {
+  margin: 20px auto;
+  width: 80%;
+}
+.post-container p {
+  text-align: left;
+}
+.post-container input {
+  width: 100%;
+  height: 3em;
+  padding-left: 5px;
+  margin-top: 5px;
+}
+.star-rating {
+  display: inline;
+}
+.post-container button {
+  display: block;
+  width: 80%;
+  font-size: 17px;
+  /* margin-top: 10px; */
+  margin: 20px auto auto;
+}
+
