@@ -1,4 +1,4 @@
-// import path from "path";
+import path from "path";
 import express from "express";
 import session from "express-session";
 import mongoose from "mongoose";
@@ -13,7 +13,7 @@ const port = 8082;
 
 mongoose.connect(process.env.MONGO_URI);
 
-// app.use(express.static("dist"));
+app.use(express.static("dist"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -37,10 +37,10 @@ app.use(
 );
 app.use("/api", apiRoutes);
 
-// app.get("*", (req, res) => {
-//   const indexHtml = path.resolve("dist", "index.html");
-//   res.sendFile(indexHtml);
-// });
+app.get("*", (req, res) => {
+  const indexHtml = path.resolve("dist", "index.html");
+  res.sendFile(indexHtml);
+});
 
 app.listen(port, () => {
   console.log(`Server start: http://localhost:${port}`);
